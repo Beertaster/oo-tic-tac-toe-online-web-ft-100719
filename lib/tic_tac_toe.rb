@@ -42,9 +42,9 @@ class TicTacToe
   def valid_move?(square)
     square = square.to_i - 1
     if square.between?(0,8) && !position_taken?(square)
-      true
+      return true
     else
-      false
+      return false
     end
   end
   
